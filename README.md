@@ -24,25 +24,27 @@ Total = 90 points
 `GET /api/rewards` - Returns reward summary for all customers.
 
 ## Project Structure
+```
 rewards-program/
 ├── src/
 │   ├── main/
-│   │    ├── java/org/example/
-│   │       ├── Controller/
-│   │       ├── data/
-│   │       ├── Exception/
-│   │       ├── Model/
-│   │       ├── Service/
-│   │       └── RewardApiApplication.java
-│   │   
+│   │   ├── java/org/example/
+│   │   ├── Controller/
+│   │   ├── data/
+│   │   ├── Exception/
+│   │   ├── Model/
+│   │   ├── Service/
+│   │   └── RewardApiApplication.java
 │   └── test/
-│       └──java/
-│         └── TestCases
-│      
+│       └── java/
+│           └── TestCases/
 ├── .gitignore
 ├── pom.xml
 └── README.md
+```
+
 ## Technologies Used
+
 Java 17
 Spring Boot 3.x
 Maven
@@ -54,6 +56,7 @@ GET /api/rewards
 Returns reward points per customer per month and total.
 
 ## Sample Response
+```
 [
 {
 "customerId": "C002",
@@ -101,7 +104,7 @@ Returns reward points per customer per month and total.
 "totalPoints": 0
 }
 ]
-
+```
 
 ## Testing
 Unit tests for service classes.
